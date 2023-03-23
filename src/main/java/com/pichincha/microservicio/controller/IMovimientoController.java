@@ -22,17 +22,17 @@ public interface IMovimientoController {
      * @param movimiento
      * @return ResponseEntity<Object>
      */
-    ResponseEntity<String> createMovimiento(MovimientoDTO movimiento) throws Exception;
+    ResponseEntity<Object> createMovimiento(MovimientoDTO movimiento) throws Exception;
 
     /**
      * @param idMovimiento,cuenta
      * @return ResponseEntity<String>
      */
-    ResponseEntity<String> updateMovimiento(Long idMovimiento, MovimientoDTO movimiento) throws Exception;
+    ResponseEntity<Object> updateMovimiento(Long idMovimiento, MovimientoDTO movimiento) throws Exception;
 
     /**
      * @param idMovimiento
      * @return ResponseEntity<Object>
      */
-    ResponseEntity<String> deleteMovimientoById(Long idMovimiento);
+    ResponseEntity<Object> deleteMovimientoById(Long idMovimiento);
 }

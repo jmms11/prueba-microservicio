@@ -11,29 +11,29 @@ public interface ICuentaController {
     /**
      * @return ResponseEntity<List<CuentaDTO>>
      */
-    public ResponseEntity<List<CuentaDTO>> getListCuentas() throws Exception;
+    ResponseEntity<List<CuentaDTO>> getListCuentas() throws Exception;
 
     /**
      * @param numeroCuenta
      * @return ResponseEntity<Object>
      */
-    public ResponseEntity<Object> getCuentaByNumeroCuenta(String numeroCuenta) throws Exception;
+    ResponseEntity<Object> getCuentaByNumeroCuenta(String numeroCuenta) throws Exception;
 
     /**
      * @param cuenta
      * @return ResponseEntity<Object>
      */
-    public ResponseEntity<String> createCuenta(CuentaDTO cuenta);
+    ResponseEntity<String> createCuenta(CuentaDTO cuenta);
 
     /**
      * @param cuenta
      * @return ResponseEntity<String>
      */
-    public ResponseEntity<String> updateCuenta(Long idCuenta,CuentaDTO cuenta);
+    ResponseEntity<String> updateCuenta(Long idCuenta,CuentaDTO cuenta);
 
     /**
      * @param idCuenta
      * @return ResponseEntity<Object>
      */
-    public ResponseEntity<String> deleteCuentaById(Long idCuenta);
+    ResponseEntity<String> deleteCuentaById(Long idCuenta);
 }
